@@ -1,7 +1,7 @@
 class CreatePickups < ActiveRecord::Migration[6.0]
   def change
     create_table :pickups do |t|
-      t.datetime :date
+      t.boolean :available
       t.string :item
       t.integer :price
       t.integer :user_id
