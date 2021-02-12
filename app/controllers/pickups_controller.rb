@@ -29,6 +29,6 @@ class PickupsController < ApplicationController
     private
 
     def pickup_params
-        params.permit(restaurant_id, user_id, available, item, image, price)
+        params.permit(:restaurant_id, :user_id, :available, :item, :image, :price)
     end
 end
