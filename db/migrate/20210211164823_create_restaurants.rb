@@ -5,6 +5,7 @@ class CreateRestaurants < ActiveRecord::Migration[6.0]
       t.string :location
       t.string :image
       t.string :cuisine
+      t.boolean :favorited
 
       t.timestamps
     end

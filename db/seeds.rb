@@ -29,7 +29,8 @@ User.create(
       name: Faker::Restaurant.name, 
       location: "40° 42' 45.8712'' N and 74° 0' 48.1752'' W", 
       image: Faker::Placeholdit.image(size: '50x50'), 
-      cuisine: Faker::Restaurant.type
+      cuisine: Faker::Restaurant.type,
+      favorited: false
     )
 end
 
