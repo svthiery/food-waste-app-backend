@@ -28,7 +28,7 @@ User.create(
     Restaurant.create(
       name: Faker::Restaurant.name, 
       location: "40° 42' 45.8712'' N and 74° 0' 48.1752'' W", 
-      image: Faker::Placeholdit.image(size: '50x50'), 
+      image: "https://media.cntraveler.com/photos/5859aad8eaa56c5e65d43539/master/pass/best-restaurants-NYC-Charlie-Bird-interior-2016.jpg", 
       cuisine: Faker::Restaurant.type,
       favorited: false
     )
@@ -41,7 +41,7 @@ end
     available: true,
     price: rand(5..25),
     restaurant_id: Restaurant.all.sample.id,
-    image: Faker::Placeholdit.image(size: '50x50'),
+    image: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=700%2C636",
     user_id: nil
   )
 end
