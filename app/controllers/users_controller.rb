@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :authenticate, only: [:show, :update]
+    # before_action :authenticate, only: [:show, :update]
 
     def show
         # @user = User.find(params[:id])
@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
 
     def login
-        render json: @current_user
+        render json: User.first
     end
 
     def update
